@@ -1,0 +1,9 @@
+.days{
+    border: solid black 1px;
+    justify-content: center;
+    
+}
+
+#week1, #week2, #week3, #week4, #week5{
+    padding: 5px;
+}
