@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simply Calendar</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="assets/css/foundation.css">
     <link rel="stylesheet" href="assets/css/index-css.css">
 </head>
@@ -142,17 +143,44 @@
     </main>
 
     <footer class="grid-x align-spaced grid-margin-x">
-        <button class="">To-Do</button>
-        <button>Contact Us</button>
-        <button>Past Items</button>
+
+        <button class="button" data-open="toDo">To-Do</button>
+        <div class="reveal small" id="toDo" data-reveal>
+            <h1>To Do List</h1>
+            <p>To Do list content goes here</p>
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <button class="button" data-open="contactUs">Contact Us</button>
+        <div class="reveal small" id="contactUs" data-reveal>
+            <h1>Contact Us</h1>
+            <p>Contact information goes here</p>
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <button class="button" data-open="pastItems">Past Items</button>
+        <div class="reveal small" id="pastItems" data-reveal>
+            <h1>Past Items</h1>
+            <p>Past items content goes here</p>
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
     </footer>
 
 
 
 
-
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script> -->
     <script src="assets/js/vendor.js"></script>
     <script src="assets/js/foundation.js"></script>
     <script src="assets/js/index-js.js"></script>
+    <script>$(document).foundation();</script>
 </body>
 </html>
