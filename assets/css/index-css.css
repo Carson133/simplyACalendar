@@ -1,3 +1,19 @@
+*{
+
+}
+
+body{
+
+}
+
+header{
+    
+}
+
+#monthName{
+    
+}
+
 
 .days{
     border: solid black 1px;
@@ -7,6 +23,7 @@
 
 #week1, #week2, #week3, #week4, #week5{
     padding: 5px;
+
 }
 
 * {
@@ -85,3 +102,13 @@
     letter-spacing: 5px;
 }
   
+
+    margin: 10px;
+    border: black dashed 1px;
+    border-radius: 3px;
+}
+
+#week1:hover, #week2:hover, #week3:hover, #week4:hover, #week5:hover{
+    border: black solid 1px;
+    cursor:pointer;
+}
